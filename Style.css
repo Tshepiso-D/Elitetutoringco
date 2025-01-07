@@ -34,7 +34,7 @@ a {
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width:80%;
+    margin: 0px 20vw 0px 20vw;
     
 }
 #mobilemenu{
@@ -103,7 +103,7 @@ h2:hover{
 .myimg{
     width:200px;
     border:5px solid rgb(255, 255, 255);
-    border-radius:100%;
+    border-radius:50px;
     display:block;
     margin-right:auto;
     margin-left:auto;

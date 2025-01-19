@@ -68,7 +68,8 @@ a {
 .title1{
     font-family:cursive;
     display: inline;  
-    color: rgb(0, 29,73)
+    color: rgb(0, 29,73);
+    padding:15px;
 }
 
 .title1:hover{
@@ -78,6 +79,7 @@ a {
     font-family:cursive;
     display: inline;  
     color: rgb(0, 29,73);
+    padding:15px;
 }
 
 .title2:hover{
@@ -168,7 +170,7 @@ h2:hover{
     animation-duration:0s;
 }
 .tlinks:link{
-    color: rgb(0, 29,73);
+    color: rgb(0, 0, 0);
 }
 .tlinks:visited{
     color:rgb(255, 255, 255);

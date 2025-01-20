@@ -63,7 +63,8 @@ a {
 }
 
 .item:hover{
-    background-color:rgb(0, 29, 73);
+    background-color:rgb(59, 156, 156);
+    border: 2px solid white;
 }
 .title1{
     font-family:cursive;

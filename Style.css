@@ -23,6 +23,12 @@ body{
     height:750px;
 }
 
+nav{
+    display:flex;
+    flex-direction:row;
+    padding:20px;
+    justify-content:space-between;
+}
 #mmenubody{
     display:none;
 }
@@ -34,7 +40,7 @@ a {
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
-    margin: 0px 20vw 0px 20vw;
+    margin: 20px  20px;
     
 }
 #mobilemenu{
@@ -45,6 +51,7 @@ a {
     padding:5px;
     margin: 10px;
     width:150px;
+    height:fit-content;
     text-align: center;
     font-weight: 10;
     background-color:rgb(0, 119, 128);
@@ -52,6 +59,7 @@ a {
     text-transform: capitalize;
     color: rgb(0, 29,73);
     cursor:pointer;
+    border:2px solid rgb(255, 255, 255);
 }
 
 .pmaterialmenu{
@@ -92,21 +100,14 @@ h2 {
     
 }
 
-.clinks:link{
-    font-size:small;
-    color: rgb(8, 0, 124);
-}
-.clinks:visited{
-    color:rgb(64, 0, 124)
-}
 h2:hover{
     color: #005c00;
 }
 
 .myimg{
     width:200px;
-    border:5px solid rgb(255, 255, 255);
-    border-radius:50px;
+    border:3px solid rgb(255, 255, 255);
+    border-radius:20px;
     display:block;
     margin-right:auto;
     margin-left:auto;
@@ -170,12 +171,10 @@ h2:hover{
 .datline:hover{
     animation-duration:0s;
 }
-.tlinks:link{
-    color: rgb(0, 0, 0);
-}
-.tlinks:visited{
+.tlinks{
     color:rgb(255, 255, 255);
 }
+
 p{  
     color:rgb(0, 0, 0);
     text-align:center;
@@ -184,10 +183,11 @@ p{
 }
 #CP{
     display:block;
-    margin-left:20px;
-    margin-right:20px;
+    margin:20px;
+    padding:10px;
     background-color:rgb(0, 119, 128);
-    border-radius:9999px;
+    border-radius:20px;
+    border:3px solid rgb(255, 255, 255);
 
 }
 
@@ -199,6 +199,7 @@ p{
     width: 25vw;
     background-color:rgb(0, 119, 128);
     border-radius:10px;
+    border:3px solid rgb(255, 255, 255);
 }
 
 #aboutus2{
@@ -210,6 +211,7 @@ p{
     margin-bottom:40px;
     background-color:rgb(0, 119, 128);
     border-radius:10px;
+    border:3px solid rgb(255, 255, 255);
 }
 #aboutus3{
     display:block;
@@ -219,6 +221,7 @@ p{
     width: 25vw;
     background-color:rgb(0, 119, 128);
     border-radius: 10px;
+    border:3px solid rgb(255, 255, 255);
 }
 
 h2{
@@ -229,6 +232,7 @@ h2{
     color:rgb(0, 29,73);
     font-size:x-large;
     font-weight:bold;
+    
 }
 #poc{
     background-color:rgb(0, 119, 128);
@@ -304,8 +308,25 @@ h2{
 .survey{
     text-align:center;
 }
-@media screen and (max-width:700px){
-    
+.footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:10px 50px;
+    margin-top:30px;
+    align-items:center;
+}
+@media screen and (max-width:1060px){
+    .title1{
+        font-size:15px;
+    }
+    .footer span{
+        font-size:12px;
+    }
+    .footer{
+        flex-direction:column;
+        justify-content:center;
+    }
     #menu{display:none;
     }
     #mobilemenu{
@@ -389,3 +410,4 @@ h2{
         width:90vw;
     }
 }
+

@@ -1,34 +1,51 @@
 
-body{
-    background-size: 1000px;
+/*For the body on the Landing page*/
+#body{
+    background-image: url(Images/coverpage.png);
+    background-size:cover;
+    background-position: center;
+    background-color:white;
     background-repeat:no-repeat;
-    background-position:center 20vh;
     text-align: justify;
     font-family: "charm", cursive;
     margin:0px;
+    padding:0px;
     background-color:rgb(125, 192, 192);
-    height:750px;
+    overflow-x:hidden;
 }
-
-
+.overlay{
+    height:150%;
+    width:100%;
+    background-color:white;
+    position:absolute;
+    opacity:80%;
+    top:0;
+    bottom:0;
+    z-index:-1;
+}
+/*For the body on the Other web pages*/
 #body2{
-    background-image: none;
-    background-size: 1000px;
-    background-repeat:no-repeat;
-    background-position:center 1px;
     text-align: justify;
     font-family: "charm", cursive;
     margin:0px;
     background-color:rgb(125, 192, 192);
-    height:750px;
 }
-
-nav{
+/*For the nav section*/
+.nav{
+    position:fixed;
+    margin:0px;
+    top:0;
+    width:100vw;
+    border-bottom:1px solid rgb(0, 29,73);
     display:flex;
     flex-direction:row;
-    padding:20px;
-    justify-content:space-between;
+    padding:20px 0px;
+    height:17vh;
+    justify-content:center;
+    background-color:white;
+    z-index:2
 }
+
 #mmenubody{
     display:none;
 }
@@ -37,10 +54,10 @@ a {
 }  
 
 #menu{
-    margin: 10px;
+    margin: 10px 0px;
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px  20px;
+
     
 }
 #mobilemenu{
@@ -48,8 +65,8 @@ a {
 }
 .item{
     font-family:sans-serif;
-    padding:5px;
-    margin: 10px;
+    padding:5px 0px;
+    margin: 10px 0px;
     width:150px;
     height:fit-content;
     text-align: center;
@@ -62,10 +79,6 @@ a {
     border:2px solid rgb(255, 255, 255);
 }
 
-.pmaterialmenu{
-    padding: 30px 5px 60px 5px;
-}
-
 .m{
     display:none;
 }
@@ -76,9 +89,13 @@ a {
 }
 .title1{
     font-family:cursive;
-    display: inline;  
+    display: flex;
+    flex-direction:column;  
     color: rgb(0, 29,73);
-    padding:15px;
+    padding:5px 0px;
+    text-wrap:none;
+    width:60vw;
+    height:10px;
 }
 
 .title1:hover{
@@ -104,6 +121,14 @@ h2:hover{
     color: #005c00;
 }
 
+.tlinks{
+    color:rgb(255, 255, 255);
+}
+/*For the My html website 04 page past year paper material sections*/
+.pmaterialmenu{
+    padding: 30px 5px 60px 5px;
+}
+/*For the image/Logo on the Landing page*/
 .myimg{
     width:200px;
     border:3px solid rgb(255, 255, 255);
@@ -112,7 +137,7 @@ h2:hover{
     margin-right:auto;
     margin-left:auto;
 }
-
+/* This is for the animation title*/
 @keyframes red-to-black{
     0%{ font-size:0px;
         color: red;
@@ -153,7 +178,9 @@ h2:hover{
     }
    }
 .datline{
+    display:flex;
     margin:10px;
+    margin-top:28vh;
     color:rgb(0, 61, 0);
     font-family:-apple-system;
     font-weight:bold;
@@ -163,6 +190,7 @@ h2:hover{
     animation-timing-function:linear;
     animation-iteration-count:infinite;
     animation-direction: linear;
+    justify-content:center;
 }
 #datline{
     height:80px;
@@ -171,26 +199,26 @@ h2:hover{
 .datline:hover{
     animation-duration:0s;
 }
-.tlinks{
-    color:rgb(255, 255, 255);
-}
-
-p{  
+/*This is for the Improver your grade line*/
+#CP p{  
     color:rgb(0, 0, 0);
     text-align:center;
     font-family:'Gill Sans';
     font-size:large;
+    color:rgb(0, 29,73);
+    font-size:x-large;
+    font-weight:bold;
 }
 #CP{
     display:block;
-    margin:20px;
-    padding:10px;
+    margin:20px 0px;
+    padding:10px 0px;
     background-color:rgb(0, 119, 128);
     border-radius:20px;
     border:3px solid rgb(255, 255, 255);
 
 }
-
+/*This is for the About webpage*/
 #aboutus1{
     display:block;
     margin-left:px;
@@ -227,17 +255,12 @@ p{
 h2{
     margin:20px;
 }
-
-.CP{
-    color:rgb(0, 29,73);
-    font-size:x-large;
-    font-weight:bold;
-    
-}
+/*This is for the footer contact us section*/
 #poc{
+    display:flex;
+    justify-content:center;
     background-color:rgb(0, 119, 128);
-    width:220px;
-    display:block;
+    width:auto;
     margin-right:auto;
     margin-left:auto;
     border-radius:10px;
@@ -247,13 +270,19 @@ h2{
     color: rgb(0, 29, 73);
     text-align:center;
     font-family:cursive;
+    height:fit-content;
+    padding:0px;
+    margin:0px;
+    margin-bottom:5px;
+    font-size:15px;
+
     
 }
-
+/*Thsese are the icon in the footer contact us section*/
 .fab{
-    margin:10px;
-    padding:15px;
-    font-size:30px;
+    margin:5px;
+    padding:5px;
+    font-size:20px;
     width:15px;
     text-align:center;
     text-decoration:none;
@@ -283,7 +312,7 @@ h2{
 .fa-whatsapp{
     color:rgb(103, 250, 103);
 }
-
+/*This is for the past year paper web pages like "Physicalsciences_Grade10.html"*/
 #pypsec{
     border:5px solid rgb(0, 29, 73);
     width: fit-content;
@@ -305,18 +334,48 @@ h2{
 .pypitem{
     justify-content:center;
 }
+
+/*This is the survey on the landing page*/
 .survey{
     text-align:center;
+    color:rgb(0,29,73);
+    background-color:rgb(0, 119, 128);
+    border-radius:20px;
+    border:3px solid white;
+    width:fit-content;
+    padding:0px 20px;
 }
-.footer{
+
+.survey a{
+    color:rgb(167, 26, 26);
+}
+
+/*This is the footer*/
+footer{
+    height:200px;
+    width:100vw;
     display:flex;
     flex-direction:row;
-    justify-content:space-between;
-    padding:10px 50px;
+    justify-content:center;
+    padding:10px 0px;
     margin-top:30px;
     align-items:center;
+    background-color:white;
+    z-index:2;
+    position:relative;
+    bottom:0;
 }
-@media screen and (max-width:1060px){
+.fa-copyright{
+    font-size:10px;
+}
+
+.footer1{
+    margin-right:10vw;
+}
+@media screen and (max-width:1172px){
+    body{
+        overflow-x:hidden;
+    }
     .title1{
         font-size:15px;
     }
@@ -330,18 +389,24 @@ h2{
     #menu{display:none;
     }
     #mobilemenu{
+    width:fit-content;
     margin: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width:80%;
+    width:20%;
     cursor:pointer;
+    }
+
+    .navtitles{
+        width:60vw;
+        
     }
     .m{
         transition-duration:2s;
         display: flex;
         position:fixed;
         right:0vh;
-        top:-100vh;
+        top:-120vh;
         flex-direction:column;
         justify-content:center;
         align-items:center;

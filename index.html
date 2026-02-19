@@ -15,11 +15,13 @@
        
     </head>
 
-    <body>
-            
-            <nav>
-                <div>
-                    <h1 class="title1">Welcome to Elite Tutoring Co!</h1><br>
+    <body id="body">
+        <div class="overlay"></div>
+        <header>
+            <nav class="nav">
+                
+                <div class="navtitles">
+                    <h1 class="title1">Welcome to Elite Tutoring Co!</h1>
                     <p class="title1">Physical Sciences and Mathematics Mastery</p>   
                 </div> 
                 <div id="menu">
@@ -27,53 +29,63 @@
                     <div class="item"><a class="tlinks" href="My html website04.html">Practice Material</a></div>
                     <div class="item"><a class="tlinks" href="My html website03.html">About</a></div>
                 </div>
-            </nav>
                 <div id="mobilemenu">
-                    <div class="item" onclick="toggleMenu()">Menu</div>    
+                    <div onclick="toggleMenu()"><i class="fa fa-bars"></i></div>    
                 </div>
-                <div id="datline">
-                    <p class="datline">Let's Make you an "A" student!</p>
-                </div>
+            </nav>
+        </header>
+
+                
+        <main>
+            
+            <div id="datline">
+                    <p class="datline">Let's Make you an "A" student!</p>    
+            </div>
+
+
             <div id="myimg">
                     <img src="images\Logo.jpg" class="myimg">
             </div>
+
+
             <div id="CP">
                 <p class="CP">Improve your grade!</p>
             </div>
             <br>
+            <center>
             <div class="survey">
-                </h3><a class="fa-solid fa-square-poll-horizontal" href="https://docs.google.com/forms/d/e/1FAIpQLSdDRmRmAC3NY5NNenAWH0-7Ddjk70VWIJEC74dZO5V_60MSjw/viewform?usp=dialog"> KINDLY TAKE OUR SURVEY!</a>
+                <p>If you are a high school student, KINDLY TAKE OUR SURVEY!</p><br/>
+                <a class="fa-solid fa-square-poll-horizontal" href="https://docs.google.com/forms/d/e/1FAIpQLSdDRmRmAC3NY5NNenAWH0-7Ddjk70VWIJEC74dZO5V_60MSjw/viewform?usp=dialog">click here!</a>
             </div>
+            </center>
             
 
-    <div id="mmenu" class="m">
-        <div class="item" onclick="toggleMenu()">Home</div>
-        <div class="item"><a class="tlinks" href="My html website05.html">Tutorial Videos</a></div>
-        <div class="item"><a class="tlinks" href="My html website04.html">Practice Material</a></div>
-        <div class="item"><a class="tlinks" href="My html website03.html">About</a></div> 
-        
-    </div>   
-    <script>
-        function toggleMenu() {
-            var element=
-            document.getElementById("mmenu");
-            element.classList.toggle("mmenubody");
-        }
-    </script>  
-    <footer style="background-color: rgb(255, 255, 255);">
-        <div class="footer">
-            <div class="footer1">
-                <h3 class="poct">Contact us here:</h3>
-                <div id="poc">
-                    <a href="https://web.facebook.com/profile.php?id=100090909246646" class ="fab fa-facebook" target ="blank"></a> <!--TO FILL LINKS-->
-                    <a href="https://wa.me/message/PJAHLBELE44YI1" class ="fab fa-whatsapp" target="blank"></a>
-                    <a href="" class ="fab fa-instagram"></a>
-                </div>
-            </div>
-        <span><i class="fa fa-copyright"></i> 2025 ELITETUTORINGCO. All rights reserved</span>
-        </div>
-    </footer> 
-           
+            <div id="mmenu" class="m">
+                <div class="item" onclick="toggleMenu()">Home</div>
+                <div class="item"><a class="tlinks" href="My html website05.html">Tutorial Videos</a></div>
+                <div class="item"><a class="tlinks" href="My html website04.html">Practice Material</a></div>
+                <div class="item"><a class="tlinks" href="My html website03.html">About</a></div> 
+                
+            </div>   
+            <script>
+                function toggleMenu() {
+                    var element=
+                    document.getElementById("mmenu");
+                    element.classList.toggle("mmenubody");
+                }
+            </script> 
+        </main> 
+        <footer>
+                    <div class="footer1">
+                        <h3 class="poct">Contact us here:</h3>
+                        <div id="poc">
+                            <a href="https://web.facebook.com/profile.php?id=100090909246646" class ="fab fa-facebook" target ="blank"></a> <!--TO FILL LINKS-->
+                            <a href="https://wa.me/message/PJAHLBELE44YI1" class ="fab fa-whatsapp" target="blank"></a>
+                            <a href="" class ="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                <span><i class="fa fa-copyright"></i> 2025 ELITETUTORINGCO. All rights reserved</span>
+        </footer> 
     </body>
 
 </html>

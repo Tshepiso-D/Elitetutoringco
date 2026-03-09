@@ -220,39 +220,10 @@ h2:hover{
 
 }
 /*This is for the About webpage*/
-#aboutus1{
-    display:block;
-    margin-left:px;
-    margin-right:20px;
-    margin-bottom:40px;
-    width: 25vw;
-    background-color:rgb(0, 119, 128);
-    border-radius:10px;
-    border:3px solid rgb(255, 255, 255);
-}
-
-#aboutus2{
-    display:block;
-    margin-left:20px;
-    margin-right:20px;
-    margin-bottom:40px;
-    width: 25vw;
-    background-color:rgb(0, 119, 128);
-    border-radius:10px;
-    border:3px solid rgb(255, 255, 255);
-}
-#aboutus3{
-    display:block;
-    margin-right:20px;
-    margin-left: 72vw;
-    margin-bottom:40px;
-    width: 25vw;
-    background-color:rgb(0, 119, 128);
-    border-radius: 10px;
-    border:3px solid rgb(255, 255, 255);
-}
-
 /*Additional About sections*/
+#aboutus1,
+#aboutus2,
+#aboutus3,
 #aboutus4,
 #aboutus5,
 #aboutus6,

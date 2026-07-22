@@ -127,7 +127,11 @@ h2:hover{
 }
 /*For the My html website 04 page past year paper material sections*/
 .pmaterialmenu{
-    padding: 30px 5px 60px 5px;
+    padding: 30px 20px 60px 20px;
+    width:70vw;
+    border-top:5px solid rgb(0, 29, 73);
+    display:flex;
+    justify-content:space-between;
 }
 /*For the image/Logo on the Landing page*/
 .myimg{
@@ -182,7 +186,7 @@ h2:hover{
     display:flex;
     margin:10px;
     margin-top:28vh;
-    color:rgb(0, 61, 0);
+    color:rgb(9, 255, 9);
     font-family:-apple-system;
     font-weight:bold;
     font-size:xx-large;
@@ -300,6 +304,7 @@ h2{
     border:5px solid rgb(0, 29, 73);
     width: fit-content;
     border-radius: 10px;
+    margin: 20px 0;
 }
 
 #tab4pyp{

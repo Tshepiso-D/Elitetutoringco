@@ -94,6 +94,21 @@ a {
     cursor:pointer;
     border:2px solid rgb(255, 255, 255);
 }
+.itemblock{
+    font-family:sans-serif;
+    padding:5px 0px;
+    margin: 10px 0px;
+    width:100%;
+    height:100%;
+    text-align: center;
+    font-weight: 10;
+    background-color:rgb(34, 105, 110);
+    border-radius:10px;
+    text-transform: capitalize;
+    color: rgb(0, 29,73);
+    cursor:pointer;
+    border:2px solid rgb(255, 255, 255);
+}
 .m{
     display:none;
 }

@@ -95,11 +95,14 @@ a {
     border:2px solid rgb(255, 255, 255);
 }
 .itemblock{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     font-family:sans-serif;
     padding:5px 0px;
     margin: 10px 0px;
     width:100%;
-    height:100%;
+    height:50%;
     text-align: center;
     font-weight: 10;
     background-color:rgb(34, 105, 110);

@@ -157,6 +157,7 @@ h2:hover{
 /*For the My html website 04 page past year paper material sections*/
 .pmaterialmenu{
     padding: 5px;
+    height: 100px;
     width:70vw;
     border-top:5px solid rgb(0, 29, 73);
     display:flex;
